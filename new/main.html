@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#nav_menu').slicknav({
+                prependTo: "#mobile_menu"
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <img src="images/sjvth75.png" alt="">
+        <h2>San Joaquin Valley Town Hall</h2>
+        <h3>Bringing cutting-edge speakers to the valley</h3>
+    </header>
+    <nav id="mobile_menu"></nav>
+    <nav id="nav_menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Speakers</a>
+                <ul>
+                    <li><a href="#">Jeffrey Toobin</a></li>
+                    <li><a href="#">Andrew Ross Sorkin</a></li>
+                    <li><a href="#">Amy Chua</a></li>
+                    <li><a href="#">Scott Sampson</a>
+                        <ul>
+                            <li><a href="#">September 2013</a></li>
+                            <li><a href="#">February 2018</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Carlos Eire</a></li>
+                    <li><a href="#">Roman Tynan</a></li>
+
+                </ul>
+            </li>
+            <li><a href="#">Get tickets</a></li>
+            <li><a href="#">Become a Member</a></li>
+            <li><a href="#">About Us</a></li>
+        </ul>
+    </nav>
+    <main>
+        <article>
+            <h1>Fossil Threads in the Web of Life</h1>
+            <img src="/new/images/ss.jpg" alt="Scott">
+            <p>What's 75 million years old and brand spanking news ...</p>
+        </article>
+        <aside>
+            <h2>This season's guest speakers</h2>
+            <nav>
+                <ul>
+                    <li>October: <a href="#" class="date_passed">Jeffrey</a></li>
+                    <li>April: <a href="#">Ronan Tynan</a></li>
+                </ul>
+            </nav>
+        </aside>
+    </main>
+    <footer>
+        <p> &copy; Copyright 2018</p>
+    </footer>
+</body>
+
+</html>
